@@ -8,24 +8,39 @@
 </head>
 
 <body>
-    <form>
-        Name: <input type="text" size="30" /><br>
-        City:
-        <select>
+    <!--action can be a URL to an API as well.-->
+    <form id="person_info" action="http://foo.com" method="POST">
+        <label for="name">Name</label>
+        <input type="text" size="30" id="name" name="name" /><br>
+        <label for="city">City</label>
+        <select name="city" id="city">
             <option value="Tshwane">Tshwane</option>
             <option value="Polokwane">Polokwane</option>
             <option value="Cape Town">Cape Town</option>
-        </select><br>
-        Tell us about yourself:
-        <textarea>
-
-        </textarea>
+        </select>
         <br>
 
-        <input type="button" value="Send">
-        <input type="button" value="Exit">
+        <label for="description">Tell us about yourself</label>
+        <input type="text" name="description" id="description">
         <br>
-        <button>Hello I am button</button>
+
+        Do you like Pizza?<br>
+        <input type="radio" id="yes" name="like_pizza" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="like_pizza" value="no">
+        <label for="no">No</label>
+        <br>
+
+        Please select programming languages you like:<br>
+        <input type="checkbox" id="c++" name="liked_language" value="C++">
+        <label for="c++">C++</label><br>
+        <input type="checkbox" id="c#" name="liked_language" value="C#">
+        <label for="c#">C#</label><br>
+        <input type="checkbox" name="liked_language" id="python" value="Python">
+        <label for="python">Python</label>
+        <br>
+
+        <input type="submit" value="Submit">
     </form>
 </body>
 
