@@ -1,0 +1,12 @@
+{
+	"name": "html",
+	"image": "mcr.microsoft.com/vscode/devcontainers/universal",
+	"customizations": {
+		"vscode": {
+			"extensions": [],
+			"settings": {}
+		}
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/html,type=bind,consistency=delegated",
+	"workspaceFolder": "/html"
+}

@@ -1,4 +1,19 @@
 Known implementations:
-    - HTML is markup language for writing documents that describe web pages.
+    - HTML is the standard markup language for writing documents that describe web pages.
+    - Each browser has a parser and renderer that compiles(as much as possible) with the standard.
+        - Firefox = Gecko Rendering Engine
+            - html parser:
+                - https://github.com/mozilla-firefox/firefox/tree/main/parser/html
+                - legacy: https://github.com/mozilla-firefox/firefox/tree/main/parser/htmlparser
+                - tokenizer: https://github.com/mozilla-firefox/firefox/blob/main/parser/html/javasrc/Tokenizer.java
+            - source layout: https://firefox-source-docs.mozilla.org/contributing/directory_structure.html#parser-html
+        - Chromium
+            - html renderer: https://github.com/chromium/chromium/tree/main/chrome/renderer
+            - source layout: https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code/
+        - Safari
+        - Microsoft Edge
+        - Google Chrome
+
+        - Microsoft Edge
 References:
    
