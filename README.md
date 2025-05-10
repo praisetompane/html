@@ -2,7 +2,7 @@
 ![build status](https://github.com/praisetompane/html/actions/workflows/html.yaml/badge.svg) <br>
 
 ## Objectives
-- Notes: HTML 
+- Notes: The HTM Language
 
 ## Language Details
 - [Language Specification](https://github.com/whatwg/html)

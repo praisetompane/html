@@ -2,18 +2,35 @@
 MYINC
 svg
 yaml
+https
+HTM
 
 # authors
 praisetompane
 
-# concepts
+# domain specific
+Tokenizer
+renderer
 
 # course codes:
 
 # technology:
 pyspelling
-https
+WebKit
 
 # institutions:
 roadmap
 whatwg
+
+# urls
+htmlparser
+javasrc
+LFByQ
+VHZa
+aitSOucL
+kX
+lfde
+plba
+tos
+vbRJSyAIsAz
+xQnUg

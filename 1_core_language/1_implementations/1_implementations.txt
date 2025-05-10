@@ -1,19 +1,41 @@
 Known implementations:
-    - HTML is the standard markup language for writing documents that describe web pages.
-    - Each browser has a parser and renderer that compiles(as much as possible) with the standard.
-        - Firefox = Gecko Rendering Engine
-            - html parser:
-                - https://github.com/mozilla-firefox/firefox/tree/main/parser/html
-                - legacy: https://github.com/mozilla-firefox/firefox/tree/main/parser/htmlparser
-                - tokenizer: https://github.com/mozilla-firefox/firefox/blob/main/parser/html/javasrc/Tokenizer.java
-            - source layout: https://firefox-source-docs.mozilla.org/contributing/directory_structure.html#parser-html
-        - Chromium
-            - html renderer: https://github.com/chromium/chromium/tree/main/chrome/renderer
-            - source layout: https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code/
-        - Safari
-        - Microsoft Edge
-        - Google Chrome
+    - Each browser has an engine that parses and renders HTML, CSS and embeds the JavaScript Engine.
+        - Engines:
+            - Gecko:  
+                - parser: https://github.com/mozilla-firefox/firefox/tree/main/parser
+                    - html:
+                        - https://github.com/mozilla-firefox/firefox/tree/main/parser/html
+                        - https://github.com/mozilla-firefox/firefox/tree/main/parser/htmlparser
+                        - tokenizer: https://github.com/mozilla-firefox/firefox/blob/main/parser/html/javasrc/Tokenizer.java
 
-        - Microsoft Edge
-References:
-   
+            - Blink: https://github.com/chromium/chromium/tree/main/third_party/blink/renderer
+                - source layout: https://docs.google.com/document/d/1aitSOucL0VHZa9Z2vbRJSyAIsAz24kX8LFByQ5xQnUg/edit?tab=t.0#heading=h.v5plba74lfde
+
+            - WebKit: https://github.com/WebKit/WebKit
+                - source layout: https://webkit.org/contributing-code/
+
+        - Browser Uses: 
+            - Mozilla Firefox:
+                - engine: Gecko
+                - source layout: https://firefox-source-docs.mozilla.org/contributing/directory_structure.html#parser-html
+
+            - Chromium:
+                - engine: Blink
+                - source layout: https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code/
+
+            - Microsoft Edge:
+                - engine: Blink
+
+            - Google Chrome
+                - engine: Blink
+
+            - Apple Safari:
+                - engine: WebKit
+
+            - Opera:
+                - engine: Blink
+
+            - Brave:
+                - engine: Blink
+
+References: ???
